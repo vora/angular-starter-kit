@@ -7,6 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
+    "prettier": "prettier --write \"**/*.{ts,js,json,css,scss,md,html}\"",
     "e2e": "ng e2e"
   },
   "private": true,
@@ -52,8 +53,8 @@
     }
   },
   "lint-staged": {
-    "*.{ts,js,json,css,md,html,sass,scss}": [
-      "prettier --write --config .prettierrc",
+    "*.{ts,js,json,css,scss,md,html}": [
+      "prettier --write",
       "git add"
     ]
   }
